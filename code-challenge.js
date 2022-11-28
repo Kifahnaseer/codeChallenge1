@@ -1,8 +1,6 @@
 //Code Challenge 1 : Student grade generator
 
-function generator (marks){
-
- //let marks = prompt ("enter grade")
+ let marks = prompt ("enter grade")
 
   if (marks <= 100 && marks >79) {
     console.log("A");
@@ -23,6 +21,4 @@ function generator (marks){
     console.log("not applicable")
   }
 
-generator(86)
 
-}
