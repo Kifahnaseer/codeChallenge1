@@ -1,7 +1,7 @@
 //input speed of Car and thee demerit Points of a Car
 function speedOfCar(){
 
-    let speedOfCar = 150;
+    let speedOfCar = prompt("enter speed");
   let demeritPointsOfCar = (speedOfCar-70)/5;
 
   //using if statement to print the speedOfCar for speed of car is less than 70, the output is "OK".
