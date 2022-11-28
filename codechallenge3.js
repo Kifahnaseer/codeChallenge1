@@ -1,17 +1,17 @@
-//input prompt basic salary and benefit one gets 
+//input prompt the basic salary and the benefit that one gets
 let basicSalary = prompt("Input basic salary earned");
 let benefits = prompt("Input benefits given");
 
-//to calculate the gross salary by adding basic salary and benefits
+//to calculate the gross salary by adding the basic salary and the benefits
 let grossSalary =parseInt(basicSalary)+ parseInt(benefits);
 console.log("grossSalary:" + grossSalary);  
 
-//to calculate the NSSF Deductions whereby NSSF Deduction is 6% of the pension.
+//to calculate the NSSF Deductions where the NSSF Deduction is 6% of the pension.
 let pension = 6000;
 let nssfDeductions = pension * 0.06;
 console.log("NSSF:" + nssfDeductions);
 
-//To calculate the gross tax which is the tax charged per each slab acoording to gross salary one earns
+//To calculate the gross tax which is the tax charged per slab acoording to the gross salary one earns
 if (grossSalary >0 && grossSalary <= 24000) {
     grossTax = 24000 * 0.1;
 } else if(grossSalary > 24000 && grossSalary <= 32333) {
@@ -21,7 +21,7 @@ if (grossSalary >0 && grossSalary <= 24000) {
 }
  console.log("grossTax:" + grossTax)
     
-//to calculate  the PAYE which is gross tax less personal relief whereby the personal relief is 2400.
+//to calculate  the PAYE which is gross tax less personal relief in which the personal relief is 2400.
 if(relief = 2400) {
     PAYE = grossTax - relief
 }
@@ -71,3 +71,4 @@ console.log("NHIF:" + NHIFDeductions);
 //to calculate the net salary which is gross salary less all deductions
 let netSalary = grossSalary - (PAYE + NHIFDeductions + nssfDeductions);
 console.log("NetSalary:" + netSalary);
+
